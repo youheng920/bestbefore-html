@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 纯文本标题 --><title>BestBefore - 食物过期追踪专家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 引入 Inter 字体 */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* 纯白色背景 */
+            min-height: 100vh;
+        }
+        /* 移除原有的渐变背景，使用纯白色 */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5rem; /* 增加顶部间距 */
+            padding-bottom: 5rem;
+        }
+        /* 样式不再需要，但保留以防万一 */
+        .app-screenshot {
+            min-height: 0; 
+            background-color: transparent;
+            display: none; /* 确保不显示 */
+        }
+        /* Logo 容器简化 */
+        .logo-container {
+            min-width: 0;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+
+    <!-- 头部导航栏 (极简风格) -->
+    <header class="p-4 md:p-6 bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- 纯文本 Logo -->
+            <div class="flex items-center logo-container">
+                <h1 class="text-xl font-extrabold text-gray-900">BestBefore</h1>
+            </div>
+            <!-- 下载按钮 - 保持在右上角 -->
+            <a href="#download" class="text-sm font-semibold py-1 px-4 text-indigo-600 hover:text-indigo-700 transition duration-300 rounded-full border border-indigo-200 bg-indigo-50">
+                获取 APK
+            </a>
+        </div>
+    </header>
+
+    <!-- 英雄区 (Hero Section) - 核心内容区 (文本居中) -->
+    <section class="hero-section px-4">
+        <!-- 容器调整为居中，最大宽度改为 max-w-4xl -->
+        <div class="max-w-4xl mx-auto flex flex-col items-center">
+            
+            <!-- 内容 - 居中显示，占据全宽 -->
+            <div class="w-full text-center">
+                <span class="inline-block text-sm font-semibold text-indigo-600 mb-3 uppercase tracking-wider">
+                    告别食物浪费，迎接新鲜生活
+                </span>
+                <!-- 标题放大，内容居中 -->
+                <h2 class="text-5xl md:text-7xl font-extrabold leading-none mb-6 text-gray-900">
+                    一站式解决您的<br class="hidden md:inline">所有<span class="text-red-500">食物过期</span>问题。
+                </h2>
+                <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-lg mx-auto">
+                    BestBefore 为您提供简洁、强大、高效的过期日期追踪解决方案。无需复杂设置，立即开始您的体验。
+                </p>
+                
+                <!-- 下载按钮 - 重点突出 -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4" id="download-cta">
+                    <a href="app-release.apk" download class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-xl hover:bg-indigo-700 transition duration-300 shadow-lg flex items-center justify-center text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                        免费下载 APK 文件 (Android)
+                    </a>
+                </div>
+                <p class="text-sm mt-3 text-gray-500">仅支持 Android 设备</p>
+            </div>
+
+            <!-- 右侧截图 (App Screenshot) 区域已移除 -->
+        </div>
+    </section>
+
+    <!-- 底部下载锚点 (Download Anchor) - 仅作为锚点使用 -->
+    <section id="download" class="pt-20 pb-10 px-4 bg-gray-50 mt-10">
+        <div class="max-w-xl mx-auto text-center">
+            <h3 class="text-3xl font-extrabold mb-6">直接下载安装包</h3>
+            
+            <div class="flex justify-center">
+                <a href="app-release.apk" download class="flex items-center justify-center bg-green-600 text-white py-3 px-6 rounded-xl shadow-lg transition duration-300 hover:bg-green-700 w-full sm:w-auto font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    下载 BestBefore APK (最新版)
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-6">
+                请注意：安装 APK 文件可能需要在您的 Android 设备上开启“允许安装未知来源应用”的权限。
+            </p>
+        </div>
+    </section>
+
+    <!-- 页脚 (极简) -->
+    <footer class="p-4 bg-white border-t border-gray-100 text-gray-500">
+        <div class="max-w-6xl mx-auto text-center text-sm">
+            &copy; 2025 BestBefore. | <a href="#" class="hover:text-indigo-600">隐私</a> | <a href="#" class="hover:text-indigo-600">条款</a>
+        </div>
+    </footer>
+
+</body>
+</html>
